@@ -1,0 +1,96 @@
+* {
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: rgb(241,242,244);
+}
+
+.clear {
+clear: both;
+}
+
+/* ----------------- Container------------------------------- */
+.container {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+/* ------------------ Navigation ----------------------------*/
+#nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72,75,106);
+    overflow: hidden;
+
+}
+#nav-logo-image{
+    height: 60px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+.nav-item{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+
+}
+.nav-item a {
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(241,242,244);
+    text-decoration: none;
+}
+.nav-item:hover{
+    background-color: rgb(54, 57, 100);
+}
+
+/* ------------------ How can we help section ----------------*/
+
+.text-highlight{
+    color: blue;
+}
+
+#How-can-we-help{
+    padding-top: 30px;
+    font-size: larger;
+    text-align: center;
+}
+
+/* ------------------ Contact section -------------------------*/
+
+#Contact {
+    background-color: rgb(228, 229, 241);
+    padding: 10px 50px;
+    margin: 70px auto 50px;
+    font-size: large;
+}
+
+#Yhteystiedot-header{
+    color: rgb(78, 25, 128);
+}
+    
+.contact-heart-img {
+    max-width: 270px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+/* ------------------ Footer ---------------------------------*/
+
+footer{
+background-color: rgb(228, 229, 241);
+height: 80px;
+text-align: center;
+padding-top: 30px;
+
+}
