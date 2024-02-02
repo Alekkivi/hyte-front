@@ -38,7 +38,7 @@
     background-color: rgb(54, 57, 100);
   }
   .hero-image {
-    background: url(/webdev_viikko3/images/hero.jpg);
+    background: url(../images/hero.jpg);
     background-position: center;
     background-size: cover;
     height: 20rem;
