@@ -1,13 +1,16 @@
 "use strict";
 
-export async function getJoke() {
+export async function getJoke(element) {
+  async function showJoke() {
     try {
-      const response = await fetch('https://api.chucknorris.io/jokes/random');
-      const data = await response.json();
-      const joke = data.value;
-      return joke;
-
+      const response = await fetch("https://api.chucknorris.io/jokes/random");
+      if (!response.ok) throw new Error("Huono haku");
+      const jokes = await response.json();
+      document.querySelector(".show_joke").innerHTML = jokes.value;
     } catch (error) {
-      console.error('Error:', error);
+      console.log(error);
     }
   }
+
+  element.addEventListener("click", () => showJoke());
+}

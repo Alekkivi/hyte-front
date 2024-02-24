@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,13 +8,68 @@
   </head>
   <body>
     <div id="app"></div>
-    <h3>Tehtävä 1</h3>
 
     <h3>1. Fetch API GET request - Vitsi API rajapinnasta</h3>
-
     <div class="show_joke"></div>
-
     <button class="chuck">Hae vitsi</button>
+
+    <h3>2. Fetch API GET request - Kissakuvat, JSON tiedosto</h3>
+    <div id="cards"></div>
+    <button class="show_cat">Hae kissakuvat</button>
+
+    <h3>3. Flexboxilla tehty kortti - Staattinen tieto</h3>
+
+    <section class="card-area">
+      <!-- yksittäinen kortti -->
+      <div class="card">
+        <!-- vasen puoli jossa kuva -->
+        <div class="card-img" id="trigger">
+          <img src="./img/squat.jpg" alt="Gym" />
+        </div>
+
+        <!-- oikea puoli jossa päiväkirjamerkintä-->
+        <div class="card-diary">
+          <h4>Treeniohjelmat</h4>
+          <p>
+            Haluatko saavuttaa kunto- ja terveys tavoitteesi tehokkaasti?
+            Tutustu uuteen treeniohjelmaamme! Suunniteltu ammattilaisten
+            toimesta, tämä ohjelma tarjoaa monipuolisia harjoituksia, jotka
+            sopivat kaikille tasolle. Aloita matkasi
+            kohti parempaa kuntoa tänään!
+          </p>
+          <p>Lue lisää</p>
+          <!-- tänne myös flexbox rakenne -->
+        </div>
+      </div>
+
+            <!-- yksittäinen kortti -->
+            <div class="card">
+              <!-- vasen puoli jossa kuva -->
+              <div class="card-img" id="trigger">
+                <img src="./img/squat.jpg" alt="Gym" />
+              </div>
+      
+              <div class="card-diary">
+                <h4>Treeniohjelmat</h4>
+                <p>
+                  Haluatko saavuttaa kunto- ja terveys tavoitteesi tehokkaasti?
+                  Tutustu uuteen treeniohjelmaamme! Suunniteltu ammattilaisten
+                  toimesta, tämä ohjelma tarjoaa monipuolisia harjoituksia, jotka
+                  sopivat kaikille tasolle. Aloita matkasi
+                  kohti parempaa kuntoa tänään!
+                </p>
+                <p>Lue lisää</p>
+                <!-- tänne myös flexbox rakenne -->
+              </div>
+            </div>
+    </section>
+
+    <h3>4. Flexboxilla tehty kortti + itse luodut elementit</h3>
+    <section class="card-area-entries"></section>
+    <button class="show_entries">Hae päiväkirjamerkinnät</button>
+
+
+
 
     <script type="module" src="/main.js"></script>
   </body>

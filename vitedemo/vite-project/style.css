@@ -83,16 +83,44 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+
+#cards {
+  min-height: 40px;
+}
+
+.card-area{
+  display: flex;
+}
+
+.card {
+  margin: 0.5rem;
+  background-color: whitesmoke;
+  display: flex;
+  width: 22rem;
+  border-radius: 45px;
+  box-shadow: 5px 5px 5px gray;
+
+  
+}
+.card-diary {
+  padding-left: 30px;
+  flex: 1;
+  background-color: whitesmoke;
+
+}
+.card-diary h4 {
+  color: turquoise;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-img img {
+  flex: 1;
+  max-width: 200%;
+}
+
+.card-img{
+  flex: 1;
+}
+
+
